@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>SocialNet-A</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel='stylesheet' type='text/css'/>
+    <!-- Custom Theme files -->
+    <!-- dropdown -->
+    <link href="css/nav.css" rel="stylesheet" type="text/css" media="all"/>
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+            });
+        });
+    </script>
+    <!-- end-smoth-scrolling -->
+</head>
+<body>
+<!-- Header Starts Here -->
+<div class="banner inner-banner">
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="main.html"><img src="./images/sna.png" height="100" width="105"></a>
+            </div>
+            <div class="search-bar">
+                <ul class="nav banner-nav">
+
+                    <li class="dropdown1"><a class="down-scroll" href="">href</a>
+                        <ul class="dropdown1">
+                            <li><a href="http://www.weibo.com">Sina Weibo</a></li>
+                            <li><a href="https://www.zhihu.com/">Zhuhu</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown1"><a href="signIn.html">Logout</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- page heading -->
+</div>
+
+<div class="container">
+
+    <div class="row PageHead" id="pricing">
+        <div class="col-md-12">
+            <form class="search-form domain-search" onsubmit="return checkSearch(this)">
+                <div class="three-fifth domain_row column first">
+                    <input type="text" class="text" id="content" placeholder="Search the person by id or name">
+                </div>
+                <div class="one-fifth column">
+                    <span class="selection-box">
+                        <select class="domains valid" name="searchType" id="searchType">
+                            <option value="#">ID</option>
+                            <option value="#">Screen Name</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="one-fifth column">
+                    <span class="selection-box">
+                        <select class="domains valid" name="website" id="website">
+                            <option value="#">Sina Weibo</option>
+                            <option value="#">ZhiHu</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="one-fifth column">
+                    <input type="submit" value="Search">
+                </div>
+                <div class="clearfix"></div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-6 PlanPricing">
+            <div class="planName"><img class="price" src="./images/timg.jpeg"/></span>
+                <h3>Basic Information</h3>
+            </div>
+            <div class="planFeatures">
+                <ul>
+                    <li>
+                        <tr>
+                            <td>Name:</td>
+                            <td id="name"></td>
+                        </tr>
+                    </li>
+                    <li>
+                        <tr>
+                            <td>Age:</td>
+                            <td id="age"></td>
+                        </tr>
+                    </li>
+                    <li>
+                        <tr>
+                            <td>Gender:</td>
+                            <td id="gender"></td>
+                        </tr>
+                    </li>
+                    <li>
+                        <tr>
+                            <td>City:</td>
+                            <td id="city"></td>
+                        </tr>
+                    </li>
+                </ul>
+            </div>
+            <p><a href="#" role="button" class="btn btn-success btn-lg">Details</a></p>
+        </div>
+        <div class="col-sm-12 col-md-6 PlanPricing">
+            <div class="planName">
+                <h3>Interest/Hobbies/Favorites</h3>
+            </div>
+            <div class="planFeatures">
+                <ul>
+                    <li>
+                        <tr>
+                            <td>Interests:</td>
+                            <td id="interests">Spots,Hiking,Music</td>
+                        </tr>
+                    </li>
+                    <li>
+                        <tr>
+                            <td>Hobbies:</td>
+                            <td id="hobbies">...</td>
+                        </tr>
+                    </li>
+                    <li>
+                        <tr>
+                            <td>Favorites:</td>
+                            <td id="favorites">...</td>
+                        </tr>
+                    </li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <p><a href="#" role="button" class="btn btn-success btn-lg">Details</a></p>
+        </div>
+        <div class="col-sm-12 col-md-6 PlanPricing">
+            <div class="planName">
+                <h3>Professional Information</h3>
+            </div>
+            <div class="planFeatures">
+                <ul>
+                    <li>
+                        <tr>
+                            <td>Job:</td>
+                            <td id="job">Software Engineer</td>
+                        </tr>
+                    </li>
+
+                    <li>
+                        <tr>
+                            <td>Hobits:</td>
+                            <td id="hobbits">Team Leader</td>
+                        </tr>
+                    </li>
+                    <li>...</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <p><a href="#" role="button" class="btn btn-success btn-lg">Details</a></p>
+        </div>
+        <div class="col-sm-12 col-md-6 PlanPricing">
+            <div class="planName">
+                <h3>Social Network Information</h3>
+            </div>
+            <div class="planFeatures">
+                <ul>
+                    <li>
+                        <tr>
+                            <td>Page Rank:</td>
+                            <td id="pageRank">13</td>
+                        </tr>
+                    </li>
+                    <li>
+                        <tr>
+                            <td>Group:</td>
+                            <td id="group">Beauties</td>
+                        </tr>
+                    </li>
+                    <li>...</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <p><a href="#" role="button" class="btn btn-success btn-lg">Details</a></p>
+        </div>
+    </div>
+</div>
+<br><br><br>
+<!-- #Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <p>Copyright &copy; 2017.Software Project Training Ⅱ (Dajiang Tao) of BJTU All rights reserved.</p>
+        </div>
+        <hr>
+    </div>
+</footer>
+<!-- /#Footer -->
+<!-- here stars scrolling icon -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        /*
+         var defaults = {
+         containerID: 'toTop', // fading element id
+         containerHoverID: 'toTopHover', // fading element hover id
+         scrollSpeed: 1200,
+         easingType: 'linear'
+         };
+         */
+
+        $().UItoTop({easingType: 'easeOutQuart'});
+
+    });
+
+    function checkSearch() {
+        var cont = document.getElementById("content").value;
+        if (cont == null || cont == "") {
+            alert("Please enter the person key (id or name) !!!");
+            return false;
+        } else {
+            return true;
+        }
+    }
+</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>

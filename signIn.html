@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>SocialNet-A</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel='stylesheet' type='text/css'/>
+
+    <!-- Custom Theme files -->
+    <!-- dropdown -->
+    <!--<link href="css/nav.css" rel="stylesheet" type="text/css" media="all"/>-->
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+            });
+        });
+    </script>
+    <!-- end-smoth-scrolling -->
+</head>
+<body>
+<!-- Header Starts Here -->
+<div class="banner inner-banner">
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="main.html"><img src="./images/sna.png" height="100" width="105"></a>
+            </div>
+        </div>
+    </div>
+    <!-- page heading -->
+</div>
+
+<div class="plans">
+    <div class="container">
+
+
+        <div class="col-md-6 three-fifth pricing">
+            <div class="pricing_top">
+                <h6>Signin with your account</h6>
+            </div>
+            <form>
+                <div class="pricing_middle">
+                    <ul>
+                        <li>
+                            <input type="text" id="name" placeholder="Please enter your name">
+                            <input type="password" id="password" placeholder="Please enter your password"><br>
+                            <input type="checkbox" id="remember">&nbsp;&nbsp;&nbsp;Remember me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="signUp.html">Forget the password</a>/<a href="signUp.html">Forget the password</a>
+                            <div class="pricing_bottom">
+                                <br>
+                                <a onclick="checkAllAndSubmit()">Sign in</a>
+
+                                <br>
+                                <a href="signUp.html">Create Account</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="col-md-6 ">
+            <div class="service-section-head text-center wow fadeInRight">
+                <br><br><br><br><br><br><br><br>
+                <h2>Explorer the secrets behind in data</h2>
+
+            </div>
+
+    </div>
+    </div></div>
+<br><br><br>
+<!-- #Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <p>Copyright &copy; 2017.Software Project Training Ⅱ (Dajiang Tao) of BJTU All rights reserved.</p>
+        </div>
+        <hr>
+    </div>
+</footer>
+<!-- /#Footer -->
+<!-- here stars scrolling icon -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        /*
+         var defaults = {
+         containerID: 'toTop', // fading element id
+         containerHoverID: 'toTopHover', // fading element hover id
+         scrollSpeed: 1200,
+         easingType: 'linear'
+         };
+         */
+
+        $().UItoTop({easingType: 'easeOutQuart'});
+
+    });
+
+    function checkAllAndSubmit() {
+        var username = document.getElementById("name").value;
+        var password = document.getElementById("password").value;
+        if (username == null || username == "") {
+            alert("Please enter your name or email");
+        } else if (password == null || password == "") {
+            alert("Please enter your password!!");
+        } else {
+            // 可以用这个提交表单: "/XX/XXX?name=" + username ...
+            window.location.href = "main.html";
+        }
+    }
+</script>
+</body>
+</html>
